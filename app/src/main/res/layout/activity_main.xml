@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="輸入些什麼...."
+        android:layout_margin="10dp"
+        android:textSize="30dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Send"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_btnbg"
+            />
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Cancel"
+            android:textSize="20dp"
+            android:layout_marginLeft="50dp"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_btnbg"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/readBuffer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:hint="Message :"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        />
+    <TextView
+        android:id="@+id/bluetoothStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:hint="Status :"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="Bluetooth On"
+            android:textSize="18dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="10dp"
+            android:drawableLeft="@drawable/bt_bluetooth"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_btnbt"
+            />
+        <Button
+            android:id="@+id/off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:text="Bluetooth Off"
+            android:textSize="18dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="10dp"
+            android:drawableLeft="@drawable/ic_action_bl_close"
+            android:background="@drawable/bg_btnbt"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/PairedBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="Show Paired Device"
+            android:textSize="18dp"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_btnscan"
+            />
+
+        <Button
+            android:id="@+id/discover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="Scan Unpaired Device"
+            android:textSize="18dp"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_btnscan"
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/devicesListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </ListView>
+
+</LinearLayout>

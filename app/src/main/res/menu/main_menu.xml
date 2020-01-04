@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="setting"
+        android:id="@+id/action_setting"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:title="About"
+        android:id="@+id/action_about"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:title="Close"
+        android:id="@+id/action_close"
+        app:showAsAction="never"
+        />
+    <item
+        android:title="GuessNumber"
+        android:id="@+id/GuessNumberGame"
+        app:showAsAction="never"
+        />
+</menu>
